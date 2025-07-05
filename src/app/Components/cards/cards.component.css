@@ -1,68 +1,92 @@
-.cards {
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+.body {
+  background-color: #a9d6e5;
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* soft background */
-  gap: 24px;
-  padding: 20px;
-}
-
-.card-box {
-  display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 400px;
-  width: 350px;
-  background: linear-gradient(145deg, #1eb2a6, #16a395); /* vibrant gradient */
-  border-radius: 20px;
+  padding: 2rem;
+}
+
+/* Grid with automatic sizing, fits 3 cards in center */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.card {
+  --grad: red, blue;
+  padding: 2.5rem;
+  background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
+  border-radius: 2rem;
+  gap: 1.5rem;
+  display: grid;
+  grid-template: 'title icon' 'content content' 'bar bar' / 1fr auto;
+  font-family: system-ui, sans-serif;
+  color: #444447;
+  box-shadow:
+    inset -2px 2px hsl(0 0 100% / 1),
+    -20px 20px 40px hsl(0 0 0 / .25);
+
+  .title {
+    font-size: 1.5rem;
+    grid-area: title;
+    align-self: end;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-break: break-all;
+
+  }
+
+  .icon {
+    grid-area: icon;
+    font-size: 3rem;
+
+    >i {
+      color: transparent;
+      background: linear-gradient(to right, var(--grad));
+      background-clip: text;
+    }
+  }
+
+  .content {
+    grid-area: content;
+
+    &>*:first-child {
+      margin-top: 0rem
+    }
+
+    &>*:last-child {
+      margin-bottom: 0rem
+    }
+  }
+
+  &::after {
+    content: "";
+    grid-area: bar;
+    height: 2px;
+    background-image: linear-gradient(90deg, var(--grad));
+  }
+}
+
+.card-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
   border: none;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-  padding-top: 40px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-box:hover {
-  transform: scale(1.05);
-  background: linear-gradient(145deg, #17cfc0, #128f85); /* hover color shift */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-.btn {
-  height: 50px;
-  width: 200px;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #007bff;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
-}
-
-.btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
-}
-
-
-
-.typewriter h1 {
-  overflow: hidden;
-  border-right: 3px solid #000;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
+.card-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }

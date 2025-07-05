@@ -1,51 +1,53 @@
-<div class="sem-1">
-    <h1 style="padding:100px 0 0 650px">Semester 1</h1>
-    <div class="container">
-        <div class="card" *ngFor="let card of sem_1_Subjects; let i = index">
-            <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
-            <a [routerLink]="['/notes_dashboard']">
-                {{card}}
-            </a>
+<div class="body">
+    <div class="sem-1">
+        <h1 style="padding:100px 0 0 650px">Semester 1</h1>
+        <div class="container">
+            <div class="card" *ngFor="let card of sem_1_Subjects; let i = index">
+                <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
+                <a [routerLink]="['/notes_dashboard']">
+                    {{card}}
+                </a>
 
+            </div>
         </div>
     </div>
-</div>
 
-<div class="sem-2">
-    <h1 style="padding:100px 0 0 650px">Semester 2</h1>
-    <div class="container">
-        <div class="card" *ngFor="let card of sem_2_Subjects; let i = index">
-            <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
-            <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
-                {{card}}
-            </a>
+    <div class="sem-2">
+        <h1 style="padding:100px 0 0 650px">Semester 2</h1>
+        <div class="container">
+            <div class="card" *ngFor="let card of sem_2_Subjects; let i = index">
+                <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
+                <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
+                    {{card}}
+                </a>
 
+            </div>
         </div>
     </div>
-</div>
 
-<div class="sem-3">
-    <h1 style="padding:100px 0 0 650px">Semester 3</h1>
-    <div class="container">
-        <div class="card" *ngFor="let card of sem_3_Subjects; let i = index">
-            <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
-            <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
-                {{card}}
-            </a>
+    <div class="sem-3">
+        <h1 style="padding:100px 0 0 650px">Semester 3</h1>
+        <div class="container">
+            <div class="card" *ngFor="let card of sem_3_Subjects; let i = index">
+                <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
+                <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
+                    {{card}}
+                </a>
 
+            </div>
         </div>
     </div>
-</div>
 
-<div class="sem-4">
-    <h1 style="padding:100px 0 0 650px">Semester 4</h1>
-    <div class="container">
-        <div class="card" *ngFor="let card of sem_4_Subjects; let i = index">
-            <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
-            <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
-                {{card}}
-            </a>
+    <div class="sem-4">
+        <h1 style="padding:100px 0 0 650px">Semester 4</h1>
+        <div class="container">
+            <div class="card" *ngFor="let card of sem_4_Subjects; let i = index">
+                <!-- <a  routerLink="/papers_dashboard" [queryParams]="{ course: 'ITP'}">Card {{ i + 1 }}</a> -->
+                <a [routerLink]="['/papers_dashboard']" [queryParams]="{ course: card}">
+                    {{card}}
+                </a>
 
+            </div>
         </div>
     </div>
 </div>

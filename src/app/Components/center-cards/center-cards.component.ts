@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './center-cards.component.css'
 })
 export class CenterCardsComponent {
-   sem_1_Subjects: string[] = ['Math', 'Physics', 'Chemistry', 'Biology', 'English', 'Computer Science'];
-  sem_2_Subjects: string[] = ['Math', 'Physics', 'Chemistry', 'Biology', 'English', 'Computer Science'];
-  sem_3_Subjects: string[] = ['Math', 'Physics', 'Chemistry', 'Biology', 'English', 'Computer Science'];
-  sem_4_Subjects: string[] = ['Math', 'Physics', 'Chemistry', 'Biology', 'English', 'Computer Science'];
+  sem_1_Subjects: string[] = ['FUNDAMENTALS OF ELECTRONICS', 'INTRODUCTION TO PROGRAMMING', 'LINEAR ALGEBRA', 'PHYSICS', 'PRINCIPLE OF MANAGEMENT', 'PROFESSIONAL COMMUNICATION'];
+  sem_2_Subjects: string[] = ['DATA STRUCTURES', 'DIGITAL SYSTEM DESIGN', 'ELECTROMAGNETIC FIELD AND WAVES', '	ELECTRONIC DEVICES AND CIRCUITS', 'ELECTRONIC WORKSHOP', 'UNIVARIATE AND MULTIVARIATE CALCULUS'];
+  sem_3_Subjects: string[] = ['ANALOG COMMUNICATION', 'ANALOG ELECTRONICS', 'ELECTRICAL ENGINEERING', 'EMI', 'MICROPROCESSOR', 'PROBABILITY AND STATISTICS'];
+  sem_4_Subjects: string[] = ['ANTENNA AND WAVE PROPAGATION', 'CONTROL SYSTEMS', 'DIGITAL IC DESIGN', 'DISCRETE TIME SIGNALS', 'INTEGRATED CIRCUITE TECHNOLOGY', 'ENTREPRENEURSHIP'];
 }

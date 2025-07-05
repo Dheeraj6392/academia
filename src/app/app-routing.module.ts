@@ -9,6 +9,7 @@ import { CenterCardsComponent } from './Components/center-cards/center-cards.com
 import { NotesDashboardComponent } from './Components/notes-dashboard/notes-dashboard.component';
 import { PaperDashboardComponent } from './Components/paper-dashboard/paper-dashboard.component';
 import { LayoutComponent } from './Components/layout/layout.component';
+import { UploadPapersComponent } from './Components/upload-papers/upload-papers.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'papers',
     component: PapersComponent,
+  },
+  {
+    path: 'upload_papers',
+    component: UploadPapersComponent,
   },
   {
     path: 'notes_dashboard',

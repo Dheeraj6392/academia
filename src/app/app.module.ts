@@ -12,8 +12,9 @@ import { CenterCardsComponent } from './Components/center-cards/center-cards.com
 import { PapersComponent } from './Components/papers/papers.component';
 import { NotesDashboardComponent } from './Components/notes-dashboard/notes-dashboard.component';
 import { PaperDashboardComponent } from './Components/paper-dashboard/paper-dashboard.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutComponent } from './Components/layout/layout.component';
+import { UploadPapersComponent } from './Components/upload-papers/upload-papers.component';
 
 
 @NgModule({
@@ -27,14 +28,16 @@ import { LayoutComponent } from './Components/layout/layout.component';
     PapersComponent,
     NotesDashboardComponent,
     PaperDashboardComponent,
-    LayoutComponent],
+    LayoutComponent,
+    UploadPapersComponent],
 
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-     HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
 
 

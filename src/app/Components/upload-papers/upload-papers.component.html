@@ -1,0 +1,26 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="uploadForm" enctype="multipart/form-data">
+
+        <div>
+            <label>UPLOAD FILES</label>
+            <input type="file" (change)="onFileChange($event)" required>
+        </div>
+
+        <div>
+            <label>SEMESTER</label>
+            <input formControlName="title" type="text" required>
+        </div>
+
+        <div>
+            <label>YEAR</label>
+            <input formControlName="description" type="text" required>
+        </div>
+
+        <div>
+            <label>COURSE NAME </label>
+            <input formControlName="description" type="text" required>
+        </div>
+
+        <button type="submit">Upload</button>
+    </form>
+</div>

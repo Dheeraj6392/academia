@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  currentTime: string = '';
+  ngOnInit(): void {
+    setInterval(() => {
+      const now = new Date();
+      this.currentTime = now.toLocaleTimeString();
+    }, 1000);
+  }
 }

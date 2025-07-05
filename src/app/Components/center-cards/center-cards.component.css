@@ -2,7 +2,9 @@
 border: 2px solid red;
 } */
 
-
+.body{
+    background-color: #a9d6e5;
+}
 .container {
     height: 400px;
     display: grid;
