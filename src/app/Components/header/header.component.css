@@ -1,0 +1,164 @@
+.top-wrap {
+  padding: 20px 0;
+  z-index: 10;
+  position: absolute; /* or use fixed if you want it to stay during scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 30px;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  /* padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem; */
+  padding: 0 60px;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+a:hover {
+  text-decoration: none;
+  outline: none !important;
+  color: #1eb2a6;
+}
+.navbar-brand span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.con {
+  margin-left: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #0d6efd;
+}
+
+.text span {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+
+.text strong {
+  font-size: 14px;
+  color: #fff;
+}
+
+.social-media a {
+  color: #fff;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #0d6efd;
+}
+
+/* *****************  hero section    ************ */
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://preview.colorlib.com/theme/academia/images/bg_1.jpg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.2); Slightly dark transparent overlay */
+  z-index: 1;
+}
+
+.hero-wrap .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-wrap .text {
+  /* backdrop-filter: blur(6px); /* Glassy effect */
+  /* -webkit-backdrop-filter: blur(6px); */ 
+  /* background: rgba(255, 255, 255, 0.05); Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+.hero-wrap .subheading {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f8b500;
+  margin-bottom: 10px;
+}
+
+.hero-wrap h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-wrap p {
+  font-size: 16px;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1eb2a6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #15998e;
+}
+
+.btn-white {
+  background-color: white;
+  color: #1eb2a6;
+  border-radius: 8px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-white:hover {
+  background-color: #e5e5e5;
+}

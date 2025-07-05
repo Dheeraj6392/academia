@@ -1,0 +1,29 @@
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Enter year (e.g., 2023)" />
+    <button (click)="onSearch()">Search</button>
+</div>
+
+
+
+<div class="qpaper-container">
+    <!-- <div *ngIf="filteredQpapers.length === 0" style="text-align:center; margin-top: 30px;">
+        <p>No question papers found for "{{ searchTerm }}".</p>
+    </div> -->
+    
+    <div class="card" *ngFor="let paper of filteredQpapers">
+        <img [src]="paper.image" alt="Question Paper" />
+        <div class="info">
+            <p>Semester: {{ paper.semester }}</p>
+            <p>Year: {{ paper.year }}</p>
+            <button class="view-btn" (click)="openModal(paper.image)">View</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-overlay" *ngIf="selectedImage" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <img [src]="selectedImage" alt="Question Paper" />
+        <button class="close-btn" (click)="closeModal()">Close</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="notes-container">
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <h3>Math Topics</h3>
+    <a [routerLink]="[]" fragment="algebra">Algebra</a>
+    <a [routerLink]="[]" fragment="calculus">Calculus</a>
+    <a [routerLink]="[]" fragment="geometry">Geometry</a>
+    <a [routerLink]="[]" fragment="trigonometry">Trigonometry</a>
+    <a [routerLink]="[]" fragment="statistics">Statistics</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Search topics..."
+        (input)="onSearch()"
+      />
+      <button (click)="onSearch()">Search</button>
+    </div>
+
+    <!-- Sections with highlight -->
+    <section id="algebra">
+      <h2 [innerHTML]="highlight('Algebra')"></h2>
+      <p [innerHTML]="highlight('Topics on linear equations, polynomials, etc.')"></p>
+    </section>
+
+    <section id="calculus">
+      <h2 [innerHTML]="highlight('Calculus')"></h2>
+      <p [innerHTML]="highlight('Topics like limits, derivatives, integrals.')"></p>
+    </section>
+
+    <section id="geometry">
+      <h2 [innerHTML]="highlight('Geometry')"></h2>
+      <p [innerHTML]="highlight('Topics on angles, triangles, coordinate geometry.')"></p>
+    </section>
+
+    <section id="trigonometry">
+      <h2 [innerHTML]="highlight('Trigonometry')"></h2>
+      <p [innerHTML]="highlight('Topics on trigonometric identities and applications.')"></p>
+    </section>
+
+    <section id="statistics">
+      <h2 [innerHTML]="highlight('Statistics')"></h2>
+      <p [innerHTML]="highlight('Topics on data analysis, mean, variance, etc.')"></p>
+    </section>
+
+  </div>
+</div>
