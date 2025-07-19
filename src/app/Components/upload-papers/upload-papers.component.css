@@ -1,60 +1,62 @@
-
-
-.container{
-    background-color: #a9d6e5;
+.container {
+  background-color: #a9d6e5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
 }
+
 form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
   max-width: 500px;
-  margin: 2rem auto;
-  background-color: #f9fafc;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 form div {
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-  display: block;
-  margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #1d3557;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 input[type="text"],
 input[type="file"] {
-  width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-size: 1rem;
-  background-color: #fff;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="file"]:focus {
-  border-color: #457b9d;
+  border-color: #0077b6;
   outline: none;
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  background: linear-gradient(to right, #0077b6, #00b4d8);
-  color: white;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 12px;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(to right, #023e8a, #0096c7);
+  background-color: #005f87;
 }

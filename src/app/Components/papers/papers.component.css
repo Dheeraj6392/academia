@@ -37,3 +37,8 @@ border: 2px solid red;
 .card:hover {
     transform: translateY(-5px);
 }
+
+.card a{
+    text-align: center;
+    text-decoration: none;
+}

@@ -10,6 +10,8 @@ import { NotesDashboardComponent } from './Components/notes-dashboard/notes-dash
 import { PaperDashboardComponent } from './Components/paper-dashboard/paper-dashboard.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { UploadPapersComponent } from './Components/upload-papers/upload-papers.component';
+import { TestComponent } from './Components/test/test.component';
+import { CoursesComponent } from './Components/courses/courses.component';
 
 const routes: Routes = [
   {
@@ -44,6 +46,15 @@ const routes: Routes = [
     path: 'papers_dashboard',
     component: PaperDashboardComponent,
   },
+  {
+    path: 'test',
+    component: TestComponent,
+  },
+  {
+    path: 'courses',
+    component: CoursesComponent,
+  },
+
   
 
 ];

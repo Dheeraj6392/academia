@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,8 @@ import { PaperDashboardComponent } from './Components/paper-dashboard/paper-dash
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { UploadPapersComponent } from './Components/upload-papers/upload-papers.component';
+import { TestComponent } from './Components/test/test.component';
+import { CoursesComponent } from './Components/courses/courses.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { UploadPapersComponent } from './Components/upload-papers/upload-papers.
     NotesDashboardComponent,
     PaperDashboardComponent,
     LayoutComponent,
-    UploadPapersComponent],
+    UploadPapersComponent,
+    TestComponent,
+    CoursesComponent],
 
   imports: [
     BrowserModule,
@@ -42,6 +46,7 @@ import { UploadPapersComponent } from './Components/upload-papers/upload-papers.
 
 
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component ,ViewEncapsulation} from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-upload-papers',
   templateUrl: './upload-papers.component.html',
-  styleUrl: './upload-papers.component.css'
+  styleUrl: './upload-papers.component.css',
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class UploadPapersComponent {
   uploadForm: FormGroup;
