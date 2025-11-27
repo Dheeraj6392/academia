@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/images/qpaper.png",
+    "semester": 1,
+    "year": 2021,
+    "course" : "EMI"
+  },
+  {
+    "image": "/images/qpaper.png",
+    "semester": 1,
+    "year": 2021,
+    "course" : "EMI"
+  },
+  {
+    "image": "/images/qpaper.png",
+    "semester": 2,
+    "year": 2021,
+    "course": "EMI"
+  }
+]
